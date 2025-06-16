@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的项目展示</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>项目展示</h1>
+            <nav>
+                <ul>
+                    <li><a href="#project">项目介绍</a></li>
+                    <li><a href="#demo">演示视频</a></li>
+                    <li><a href="#team">团队介绍</a></li>
+                    <li><a href="#process">课程过程</a></li>
+                    <li><a href="#homework">小作业</a></li>
+                    <li><a href="#summary">总结思考</a></li>
+                    <li><a href="#repo">Git仓库</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="project" class="section">
+            <h2>项目介绍</h2>
+            <div class="content">
+                <!-- <img src="images/project-image/1.jp" alt="项目图片" class="float-right"> -->
+                <p>  小智基于ESP32 S3芯片及开源硬件构建，融合大语言模型，语音识别引擎，语音合成系统和声纹识别模块等技术，软硬件协同赋予其强大的语言处理与交互能力。​针对家长繁忙无法陪伴的小孩子，设计了一个智能语音陪伴机器人。小智不仅能与孩子进行自然对话，还能讲故事、唱歌、回答问题，甚至能识别孩子的情绪变化，提供个性化的互动体验。通过语音交互，小智能够帮助孩子缓解孤独感。</p>
+                <p>支持 Wi-Fi 与 Cat.1 模块（ML307），可实现远程智能对话。语音交互丰富，具备离线语音唤醒功能，基于 ESP-SR 技术，能精准识别唤醒词；支持流式语音对话，通过WebSocket或UDP实时传输，交流顺畅自然。声纹识别可精准分辨使用者身份，保障交互的个性化与安全性。然高质量语音。还支持自定义提示词、定制角色音色，满足不同用户对个性化对话风格的需求；具备短期记忆功能，记录对话上下文，生成总结，使对话更连贯自然。</p>
+<p>对于我们来说，可以学习AI与嵌入式开发。家庭场景里，有望成为自动化语音中控器，与各类实体设备互联，提升家居智能化水平；还能作为情感陪伴机器人，给予温暖、有情绪回应的交流，缓解孤独。在 AI 情景剧模拟平台，为游戏、剧本杀等增添智能交互角色，丰富剧情体验 。</p>
+</p>
+                <ul>
+                </ul>
+            </div>
+        </section>
+
+        <section id="demo" class="section">
+            <h2>演示视频</h2>
+            <div class="content">
+                <div class="video-container">
+                    <!-- 替换为你的哔哩哔哩视频嵌入代码 -->
+                    <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=114692152368054&bvid=BV1nHMqzGEhe&cid=30527062235&p=1" 
+                            scrolling="no" 
+                            border="0" 
+                            frameborder="no" 
+                            framespacing="0" 
+                            allowfullscreen="true"> 
+                    </iframe>
+                </div>
+                <p></p>
+            </div>
+        </section>
+
+        <section id="team" class="section">
+            <h2>小组成员</h2>
+            <div class="content team-members">
+                <div class="member">
+                    <alt="团队成员">
+                    <h3></h3>孙艺博
+                    <p>项目开源代码修改和管理，开发板烧录和外壳设计</p>
+                 
+                </div>
+                <div class="member">
+                    <alt="团队成员">
+                    <h3>韦钧耀</h3>
+                    <p>网页制作和功能调试，容器零件设计打印</p>
+                   
+                </div>
+                                <div class="member">
+                    <alt="团队成员">
+                    <h3>王淇</h3>
+                    <p>小智外壳和内部结构设计，添加音响功能</p>
+                    
+                </div>
+                                <div class="member">
+                    <alt="团队成员">
+                    <h3>张旭林</h3>
+                    <p>项目讲解和小智外壳盖子的设计打印</p>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="section">
+            <h2>课程过程</h2>
+            <div class="content">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">一</div>
+                        <div class="timeline-content">
+                            <h3>项目构思</h3>
+                            <p>想给小朋友做一个趣味陪伴AI助手，通过语音互动、故事讲述、情绪识别，缓解儿童孤独感</p>
+                            <p>选用芯片：低功耗MCU（ESP32 S3）</p>
+                            <p>语音交互：离线语音识别或轻量化云端API</p>
+                            <p>内容引擎：预置故事库、儿歌、科普问答，支持家长自定义上传</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">二</div>
+                        <div class="timeline-content">
+                            <h3>需求分析</h3>
+                            <p>对儿童来说，趣味互动，简单操作，根据喜好个性化内容</p>
+                            <p>对家长来说，需要对儿童足够安全，也能满足陪伴任务</p>
+                        </div>
+                    </div>
+                    <!-- 添加更多时间线项目 -->
+                </div>
+            </div>
+        </section>
+
+        <section id="homework" class="section">
+            <h2>小作业</h2>
+            <div class="content">
+                <div class="homework-grid">
+                    <div class="homework-item">
+                        <h3>esp开发板烧录和调试</h3>
+                    
+                     
+                    </div>
+                    <div class="homework-item">
+                        <h3>外壳和整体结构部件3D打印</h3>
+                        <!-- <p>作业描述</p> -->
+                        <!-- <a href="https://www.w3school.com.cn/tags/att_a_href.asp" class="btn">查看详情</a> -->
+                    </div>
+                    <!-- 添加更多作业 -->
+                </div>
+            </div>
+        </section>
+
+        <section id="summary" class="section">
+            <h2>总结与思考</h2>
+            <div class="content">
+                <div class="summary-box">
+                    <h3>项目收获</h3>
+                    <ul>
+                        <li>对使用Solidwork进行建模能力提升</li>
+                        <li>对开发板和编程结合的使用有所提升</li>
+                        <li>初步学会使用github管理项目</li>
+                    </ul>
+                </div>
+                <div class="summary-box">
+                    <h3>反思与改进</h3>
+                    <ul>
+                        <li>在硬件设计上，若能进一步优化电路布局，或许可以减少信号干扰，提升麦克风的灵敏度和稳定性。在软件算法方面，对于语音识别的优化还可以更加深入，以提高在复杂环境下的识别准确率。另外，在项目时间管理上，前期对一些技术难点预估不足，导致部分任务进度拖沓，后期时间较为紧张。</li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="repo" class="section">
+            <h2>Git仓库</h2>
+            <div class="content">
+                <div class="repo-card">
+                    <i class="fab fa-github fa-3x"></i>
+                    <h3>项目源代码</h3>
+                    <p>项目的GitHub仓库地址：</p>
+                    <a href="https://github.com/Wyx0712ovo/my-project-website" class="btn" target="_blank">访问仓库</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 我们出品必属精品.</p>
+            <div class="social-links">
+                <a href="https://github.com/"><i class="fab fa-github"></i></a>
+                <a href="https://www.bilibili.com/"><i class="fab fa-bilibili"></i></a>
+            
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
